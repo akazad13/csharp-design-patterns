@@ -118,7 +118,7 @@ namespace Singleton
 
 ```
 
-### 2. Factory Pattern
+### 2. Factory Method Pattern
 
 ### 3. Abstract Factory Pattern
 
