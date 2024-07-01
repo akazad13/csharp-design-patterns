@@ -4,11 +4,11 @@
 
 These patterns deal with object creation.
 - Abstract the object instantiation process.
-- Help us making your system independent of how its object are created, composed and representated.
+- Help us make your system independent of how its object is created, composed, and represented.
 
 ### 1. Singleton Pattern
 
-Singleton let you access your object from anywhere in your application. It guarantee that only one instance of this class will be available at any point in time.
+Singleton lets you access your object from anywhere in your application. It guarantees that only one instance of this class will be available anytime.
 
 Holding the class instance in a global variable doesn’t prevent clients from creating other instances of the class. We need to make the class responsible for ensuring only one instance of itself exists.
 
@@ -21,10 +21,12 @@ Holding the class instance in a global variable doesn’t prevent clients from c
 **Examples**
 
 → Managing a database connection pool.
-→ Caching frequently accessed data (Single instance to easily evictino of cache).
+
+→ Caching frequently accessed data (Single instance to easily eviction of cache).
+
 → Managing application configuration settings.
 
-Violateds the single responsibility principle as the object creating and the lifetime of the the object is maintained by the class.
+Violated the single responsibility principle as the object creating and the lifetime of the object is maintained by the class.
 
 ```csharp
 // Program.cs
