@@ -22,8 +22,6 @@ Holding the class instance in a global variable doesn’t prevent clients from c
 
 → Managing a database connection pool.
 
-![Screenshot 2024-06-27 151456](https://github.com/akazad13/csharp-design-patterns/assets/16265339/6ef8dba5-d714-4447-9680-86b4fc02c1e7)
-
 → Caching frequently accessed data (Single instance to easily eviction of cache).
 
 → Managing application configuration settings.
