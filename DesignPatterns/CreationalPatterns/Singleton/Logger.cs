@@ -1,12 +1,18 @@
 namespace Singleton
 {
-    // Singleton
+    /// <summary>
+    /// Singleton
+    /// </summary>
     public class Logger
     {
-        // Lazy<T> for lazy initialization
+        /// <summary>
+        /// Lazy<T> for lazy initialization
+        /// </summary>
         private static readonly Lazy<Logger> _lazyLogger = new(() => new Logger());
 
-        // Instance
+        /// <summary>
+        /// Instance
+        /// </summary>
         public static Logger Instance
         {
             get
@@ -22,7 +28,9 @@ namespace Singleton
 
         protected Logger() { }
 
-        // SingletonOperation
+        /// <summary>
+        /// SingletonOperation
+        /// </summary>
         public void Log(string message)
         {
             Console.WriteLine($"Message to log: {message}");
