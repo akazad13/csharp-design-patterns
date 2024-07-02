@@ -1,5 +1,8 @@
 namespace FactoryMethod
 {
+    /// <summary>
+    /// Product
+    /// </summary>
     public abstract class DiscountService
     {
         public abstract int DiscountPercentage { get; }
@@ -7,6 +10,9 @@ namespace FactoryMethod
         public override string ToString() => GetType().Name;
     }
 
+    /// <summary>
+    /// Concreate Product A
+    /// </summary>
     public class CountryDiscountService : DiscountService
     {
         private readonly string _countryIdentifier;
@@ -35,6 +41,9 @@ namespace FactoryMethod
         }
     }
 
+    /// <summary>
+    /// Concreate Product B
+    /// </summary>
     public class CodeDiscountService : DiscountService
     {
         private readonly Guid _code;
@@ -50,11 +59,17 @@ namespace FactoryMethod
         }
     }
 
+    /// <summary>
+    /// Creator
+    /// </summary>
     public abstract class DiscountFactory
     {
         public abstract DiscountService CreateDiscountService();
     }
 
+    /// <summary>
+    /// Concreate Creator A
+    /// </summary>
     public class CountryDiscountFactory : DiscountFactory
     {
         public readonly string _countryIdentifier;
@@ -70,6 +85,9 @@ namespace FactoryMethod
         }
     }
 
+    /// <summary>
+    /// Concreate Creator B
+    /// </summary>
     public class CodeDiscountFactory : DiscountFactory
     {
         public readonly Guid _code;
