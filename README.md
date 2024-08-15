@@ -22,7 +22,7 @@ Holding the class instance in a global variable doesn’t prevent clients from c
 
 → Managing a database connection pool.
 
-→ Caching frequently accessed data (Single instance to easily eviction of cache).
+→ Caching frequently accessed data (Single instance to evict the cache easily).
 
 → Managing application configuration settings.
 
@@ -124,6 +124,9 @@ namespace Singleton
 
 ## Structural Patterns
 
+### 1. Adapter Pattern
+
+### 2. Decorator Pattern
 
 ## Behavioral Patterns
 
