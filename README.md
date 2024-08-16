@@ -128,5 +128,11 @@ namespace Singleton
 
 ### 2. Decorator Pattern
 
+### 3. Facade Pattern
+
 ## Behavioral Patterns
+
+### 1. Command Pattern
+
+### 2. Observer Pattern
 
