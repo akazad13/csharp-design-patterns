@@ -8,23 +8,23 @@ These patterns deal with object creation.
 
 ### 1. Singleton Pattern
 
-Singleton lets you access your object from anywhere in your application. It guarantees that only one instance of this class will be available anytime.
+Singleton lets you access your object from anywhere in your application. It guarantees that only one instance of this class will be available a time.
 
 Holding the class instance in a global variable doesn’t prevent clients from creating other instances of the class. We need to make the class responsible for ensuring only one instance of itself exists.
 
 **Use Cases for the Singleton Pattern**
 
-→ Should be used when a class must have a single instance available, and it must be accessible to clients from a well-known access point.
+- Should be used when a class must have a single instance available, and it must be accessible to clients from a well-known access point.
 
-→ When the sole instance should be extensible by subclassing. and clients should be able to use an extended instance without modifying their code.
+- When the sole instance should be extensible by subclassing. and clients should be able to use an extended instance without modifying their code.
 
 **Examples**
 
-→ Managing a database connection pool.
+- Managing a database connection pool.
 
-→ Caching frequently accessed data (Single instance to evict the cache easily).
+- Caching frequently accessed data (Single instance to evict the cache easily).
 
-→ Managing application configuration settings.
+- Managing application configuration settings.
 
 Violated the single responsibility principle as the object creating and the lifetime of the object is maintained by the class.
 
