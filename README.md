@@ -4,30 +4,30 @@
   - [Singleton](#singleton)
   - [Factory Method](#factory-method)
   - [Abstract Factory](#abstract-factory)
-  - [Builder](#builder)
-  - [Prototype](#prototype)
+  - [Builder](#builder) :soon:
+  - [Prototype](#prototype) :soon:
 - [Structural Patterns](#structural-patterns)
-  - [Adapter](#adapter)
-  - [Bridge](#bridge)
-  - [Decorator](#decorator)
-  - [Composite](#composite)
-  - [Facade](#facade)
-  - [Proxy](#proxy)
-  - [Flyweight](#flyweight)
+  - [Adapter](#adapter) :soon:
+  - [Bridge](#bridge) :soon:
+  - [Decorator](#decorator) :soon:
+  - [Composite](#composite) :soon:
+  - [Facade](#facade) :soon:
+  - [Proxy](#proxy) :soon:
+  - [Flyweight](#flyweight) :soon:
 - [Behavioral Patterns](#behavioral-patterns)
-  - [Template](#template)
-  - [Strategy](#strategy)
-  - [Command](#command)
-  - [Momento](#momento)
-  - [Mediator](#mediator)
-  - [Chain of Responsibility](#chain-of-responsibility)
-  - [Observer](#observer)
-  - [State](#state)
-  - [Iterator](#iterator)
-  - [Visitor](#visitor)
-  - [Interpreter](#interpreter)
-  - [Repository](#repository)
-  - [Unit of Work](#unit-of-work)
+  - [Template](#template) :soon:
+  - [Strategy](#strategy) :soon:
+  - [Command](#command) :soon:
+  - [Momento](#momento) :soon:
+  - [Mediator](#mediator) :soon:
+  - [Chain of Responsibility](#chain-of-responsibility) :soon:
+  - [Observer](#observer) :soon:
+  - [State](#state) :soon:
+  - [Iterator](#iterator) :soon:
+  - [Visitor](#visitor) :soon:
+  - [Interpreter](#interpreter) :soon:
+  - [Repository](#repository) :soon:
+  - [Unit of Work](#unit-of-work) :soon:
  
 
 ## Creational Patterns
