@@ -1,12 +1,42 @@
 # Design Patterns
 
+- [Creational Patterns](#creational-patterns)
+  - [Singleton](#singleton)
+  - [Factory Method](#factory-method)
+  - [Abstract Factory](#abstract-factory)
+  - [Builder](#builder)
+  - [Prototype](#prototype)
+- [Structural Patterns](#structural-patterns)
+  - [Adapter](#adapter)
+  - [Bridge](#bridge)
+  - [Decorator](#decorator)
+  - [Composite](#composite)
+  - [Facade](#facade)
+  - [Proxy](#proxy)
+  - [Flyweight](#flyweight)
+- [Behavioral Patterns](#behavioral-patterns)
+  - [Template](#template)
+  - [Strategy](#strategy)
+  - [Command](#command)
+  - [Momento](#momento)
+  - [Mediator](#mediator)
+  - [Chain of Responsibility](#chain-of-responsibility)
+  - [Observer](#observer)
+  - [State](#state)
+  - [Iterator](#iterator)
+  - [Visitor](#visitor)
+  - [Interpreter](#interpreter)
+  - [Repository](#repository)
+  - [Unit of Work](#unit-of-work)
+ 
+
 ## Creational Patterns
 
 These patterns deal with object creation.
 - Abstract the object instantiation process.
 - Help us make your system independent of how its object is created, composed, and represented.
 
-### 1. Singleton Pattern
+### Singleton
 
 Singleton lets you access your object from anywhere in your application. It guarantees that only one instance of this class will be available a time.
 
@@ -118,21 +148,21 @@ namespace Singleton
 
 ```
 
-### 2. Factory Method Pattern
+### Factory Method
 
-### 3. Abstract Factory Pattern
+### Abstract Factory
 
 ## Structural Patterns
 
-### 1. Adapter Pattern
+### Adapter
 
-### 2. Decorator Pattern
+### Decorator
 
-### 3. Facade Pattern
+### Facade
 
 ## Behavioral Patterns
 
-### 1. Command Pattern
+### Command
 
-### 2. Observer Pattern
+### Observer
 
