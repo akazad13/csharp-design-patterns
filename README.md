@@ -156,6 +156,7 @@ namespace Singleton
 
 ### Adapter
 
+
 ### Decorator
 
 ### Facade
