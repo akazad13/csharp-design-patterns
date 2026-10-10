@@ -20,33 +20,32 @@ namespace Command
     }
 
     /// <summary>
-    /// Reciever (interface)
+    /// Receiver (interface)
     /// </summary>
     public interface IEmployeeManagerRepository {
-        void AddEmploye(int managerId, Employee employee);
-        void RemoveEmploye(int managerId, Employee employee);
-        bool HasEmployee(int managerId, int employeId);
+        void AddEmployee(int managerId, Employee employee);
+        void RemoveEmployee(int managerId, Employee employee);
+        bool HasEmployee(int managerId, int employeeId);
         void WriteDataStore();
     }
 
     /// <summary>
-    /// Concrete Reciver
+    /// Concrete Receiver
     /// </summary>
-    /// 
     public class EmployeeManagerRepository : IEmployeeManagerRepository
     {
         private readonly List<Manager> _managers = new() { new Manager(1, "Paul"), new Manager(2, "Sid")};
-        public void AddEmploye(int managerId, Employee employee)
+        public void AddEmployee(int managerId, Employee employee)
         {
             _managers.First(m => m.Id == managerId).Employees.Add(employee);
         }
 
-        public bool HasEmployee(int managerId, int employeId)
+        public bool HasEmployee(int managerId, int employeeId)
         {
-            return _managers.First(m => m.Id == managerId).Employees.Exists(e => e.Id == employeId);
+            return _managers.First(m => m.Id == managerId).Employees.Exists(e => e.Id == employeeId);
         }
 
-        public void RemoveEmploye(int managerId, Employee employee)
+        public void RemoveEmployee(int managerId, Employee employee)
         {
             _managers.First(m => m.Id == managerId).Employees.Remove(employee);
         }
@@ -115,7 +114,7 @@ namespace Command
                 return;
             }
 
-            _employeeManagerRepository.AddEmploye(_managerId, _employee);
+            _employeeManagerRepository.AddEmployee(_managerId, _employee);
 
         }
 
@@ -125,7 +124,7 @@ namespace Command
                 return;
             }
 
-            _employeeManagerRepository.RemoveEmploye(_managerId, _employee);
+            _employeeManagerRepository.RemoveEmployee(_managerId, _employee);
         }
     }
 

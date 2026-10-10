@@ -17,13 +17,13 @@ namespace Observer
     /// </summary>
 
     public abstract class TicketChangeNotifier {
-        private List<ITicketChagneListener> _observers = [];
+        private List<ITicketChangeListener> _observers = [];
 
-        public void AddObserver(ITicketChagneListener observer) {
+        public void AddObserver(ITicketChangeListener observer) {
             _observers.Add(observer);
         }
 
-        public void RemoveObserver(ITicketChagneListener observer) {
+        public void RemoveObserver(ITicketChangeListener observer) {
             _observers.Remove(observer);
         }
 
@@ -37,7 +37,7 @@ namespace Observer
     /// <summary>
     /// Observer
     /// </summary>
-    public interface ITicketChagneListener {
+    public interface ITicketChangeListener {
         void OnTicketChange(Ticket ticket);
     }
 
@@ -58,7 +58,7 @@ namespace Observer
     /// Concrete Observer 1
     /// </summary>
 
-    public class TicketResellerService : ITicketChagneListener {
+    public class TicketResellerService : ITicketChangeListener {
         public void OnTicketChange(Ticket ticket) {
             Console.WriteLine($"{nameof(TicketResellerService)} received a new ticket: {ticket.MovieId} - {ticket.Amount}");
         }
@@ -68,7 +68,7 @@ namespace Observer
     /// Concrete Observer 2
     /// </summary>
 
-    public class TicketStockService : ITicketChagneListener {
+    public class TicketStockService : ITicketChangeListener {
         public void OnTicketChange(Ticket ticket) {
             Console.WriteLine($"{nameof(TicketStockService)} received a new ticket: {ticket.MovieId} - {ticket.Amount}");
         }

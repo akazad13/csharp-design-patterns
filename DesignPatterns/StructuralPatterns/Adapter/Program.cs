@@ -1,19 +1,13 @@
-﻿using ObjectAdapter;
-
 Console.Title = "Adapter Pattern";
 
 // Object adapter example
-ICityAdapter adapter = new CityAdapter();
-var city = adapter.GetCity();
-
-Console.WriteLine($"City: {city.FullName}, Population: {city.Inhabitants}");
-
+Console.WriteLine("--- Object Adapter ---");
+ObjectAdapter.ICityAdapter objectAdapter = new ObjectAdapter.CityAdapter();
+var cityFromObjectAdapter = objectAdapter.GetCity();
+Console.WriteLine($"City: {cityFromObjectAdapter.FullName}, Population: {cityFromObjectAdapter.Inhabitants}");
 
 // Class adapter example
-
-// using ClassAdapter;
-
-// ICityAdapter adapter = new CityAdapter();
-// var city = adapter.GetCity();
-
-// Console.WriteLine($"City: {city.FullName}, Population: {city.Inhabitants}");
+Console.WriteLine("\n--- Class Adapter ---");
+ClassAdapter.ICityAdapter classAdapter = new ClassAdapter.CityAdapter();
+var cityFromClassAdapter = classAdapter.GetCity();
+Console.WriteLine($"City: {cityFromClassAdapter.FullName}, Population: {cityFromClassAdapter.Inhabitants}");
