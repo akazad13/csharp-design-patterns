@@ -1797,6 +1797,12 @@ using (var uow = new InMemoryUnitOfWork())
 
 ---
 
+## 🤖 AI-Driven Development & Contributing
+
+Autonomous coding agents (Antigravity, Cursor, Claude Code, GitHub Copilot) operating in this repository must consult [AGENTS.md](AGENTS.md) for pattern structure standards (analogy, problem solved, UML, modern C# 12 implementation), thread safety, and unit test requirements.
+
+---
+
 ## 👤 Author
 
 **Md. Abul Kalam**
