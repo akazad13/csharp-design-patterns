@@ -14,6 +14,7 @@
 [Structural](#structural-patterns) •
 [Behavioral](#behavioral-patterns) •
 [Architecture Patterns](#repository) •
+[Architecture & Decisions](#-architecture--decisions) •
 [Table of Contents](#table-of-contents)
 
 </div>
@@ -62,6 +63,7 @@
   - [Interpreter](#interpreter)
   - [Repository](#repository)
   - [Unit of Work](#unit-of-work)
+- [Architecture & Decisions](#-architecture--decisions)
 
 ---
 
@@ -1794,6 +1796,19 @@ using (var uow = new InMemoryUnitOfWork())
     uow.Commit(); // Atomically saves customer and order
 }
 ```
+
+---
+
+## 🏗️ Architecture & Decisions
+
+This repository adheres to structured architectural practices and records technical decisions as Architecture Decision Records (ADRs). Key decisions covering .NET runtime targets, idiomatic modern C# syntax, and pattern taxonomy are cataloged in [docs/adr/](docs/adr/README.md).
+
+| ADR | Title | Status |
+|---|---|---|
+| [ADR-0001](docs/adr/0001-record-architecture-decisions.md) | Record Architecture Decisions | Accepted |
+| [ADR-0002](docs/adr/0002-dotnet-modernization-and-pattern-hierarchy.md) | .NET Modernization and Pattern Hierarchy | Accepted |
+
+For details on proposing or reviewing architectural decisions, see the [Architecture Decision Records Index](docs/adr/README.md).
 
 ---
 
