@@ -8,6 +8,7 @@ This directory contains records of significant architectural and technical decis
 |---|---|---|---|---|
 | [ADR-0001](0001-record-architecture-decisions.md) | 2026-11-07 | Record Architecture Decisions | Accepted | Establish `docs/adr/` with sequential numbering (`NNNN-title.md`) to capture rationale and prevent re-debating settled decisions. |
 | [ADR-0002](0002-dotnet-modernization-and-pattern-hierarchy.md) | 2026-11-07 | .NET Modernization and Pattern Hierarchy | Accepted | Standardize on .NET 8 (LTS) / C# 12+ idioms, standalone runnable projects grouped by GoF category, and 5-point pedagogical catalog standards. |
+| [ADR-0003](0003-testing-paradigm-and-agentic-verification.md) | 2026-11-07 | Testing Paradigm and Agentic Verification | Accepted | Codify TDD-driven testing paradigm: behavioral verification over method call assertions, contract isolation, pure xUnit, zero banned packages (no Moq). |
 
 ## Lifecycle
 

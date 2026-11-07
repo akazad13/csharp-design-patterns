@@ -14,6 +14,7 @@
 [Structural](#structural-patterns) •
 [Behavioral](#behavioral-patterns) •
 [Architecture Patterns](#repository) •
+[Testing Paradigm](#-testing-paradigm) •
 [Architecture & Decisions](#-architecture--decisions) •
 [Table of Contents](#table-of-contents)
 
@@ -63,6 +64,7 @@
   - [Interpreter](#interpreter)
   - [Repository](#repository)
   - [Unit of Work](#unit-of-work)
+- [Testing Paradigm](#-testing-paradigm)
 - [Architecture & Decisions](#-architecture--decisions)
 
 ---
@@ -1799,14 +1801,31 @@ using (var uow = new InMemoryUnitOfWork())
 
 ---
 
+## 🧪 Testing Paradigm
+
+Following the principles codified in [ADR-0003: Testing Paradigm and Agentic Verification](docs/adr/0003-testing-paradigm-and-agentic-verification.md), this repository employs a behavior-driven verification philosophy designed for both human engineers and autonomous AI agents:
+
+- **Behavioral Verification Over Method Call Assertions**: Tests assert on observable outcomes, calculated values, and state transitions rather than private method invocation sequences. Tests withstand internal refactoring as long as the external contract holds.
+- **Contract Isolation & Deterministic State Assertions**: Every pattern (e.g. interchangeable strategies, recursive composites, polymorphic factories, structural adapters) is tested against explicit contract specifications with deterministic in-memory state assertions.
+- **Zero Banned Packages & Pure .NET**: `Moq` is strictly prohibited to eliminate supply-chain vulnerabilities and brittle call-verification anti-patterns. Testing relies on **pure xUnit**, real implementations, and lightweight pure C# test doubles (`NSubstitute` permitted only when dynamic mocking is strictly required).
+- **Fast In-Memory Execution**: Tests run in milliseconds with zero disk I/O, zero network dependencies, and zero thread-sleep delays.
+
+```bash
+# Execute test suite
+dotnet test DesignPatterns/DesignPatterns.sln
+```
+
+---
+
 ## 🏗️ Architecture & Decisions
 
-This repository adheres to structured architectural practices and records technical decisions as Architecture Decision Records (ADRs). Key decisions covering .NET runtime targets, idiomatic modern C# syntax, and pattern taxonomy are cataloged in [docs/adr/](docs/adr/README.md).
+This repository adheres to structured architectural practices and records technical decisions as Architecture Decision Records (ADRs). Key decisions covering .NET runtime targets, idiomatic modern C# syntax, pattern taxonomy, and testing paradigms are cataloged in [docs/adr/](docs/adr/README.md).
 
 | ADR | Title | Status |
 |---|---|---|
 | [ADR-0001](docs/adr/0001-record-architecture-decisions.md) | Record Architecture Decisions | Accepted |
 | [ADR-0002](docs/adr/0002-dotnet-modernization-and-pattern-hierarchy.md) | .NET Modernization and Pattern Hierarchy | Accepted |
+| [ADR-0003](docs/adr/0003-testing-paradigm-and-agentic-verification.md) | Testing Paradigm and Agentic Verification | Accepted |
 
 For details on proposing or reviewing architectural decisions, see the [Architecture Decision Records Index](docs/adr/README.md).
 
